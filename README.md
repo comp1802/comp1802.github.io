@@ -1,1 +1,1 @@
-# comp1802.github.io
+# COMP1802 - Thiết kế WEB - FIT, HCMUE
