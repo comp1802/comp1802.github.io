@@ -24,7 +24,7 @@
     <div class="container-fluid">
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Andy</a>
+            <a class="navbar-brand" href="#">HCMUE</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -36,7 +36,7 @@
                         <a class="nav-link" href="#">Trang chủ <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">James</a>
+                        <a class="nav-link" href="#">Paul</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -67,10 +67,10 @@
         <div class="row">
             <div id="cot1" class="col-md-4" style="background-color:yellow;">
                 <div class="alert alert-success" role="alert">
-                    A simple success alert—check it out!
+                    A simple success alert — check it out!
                 </div>
                 <div class="alert alert-danger" role="alert">
-                    A simple danger alert—check it out!
+                    A simple danger alert — check it out!
                 </div>
             </div>
 
@@ -86,7 +86,7 @@
         <div class="row">
 
             <div class="col-4">
-                <button onclick="getCodeGymRepos()">Tải danh sách repo của CodeGym</button>
+                <button onclick="getHCMUERepos()">Tải danh sách repo của HCMUE</button>
             </div>
 
             <div class="col-8">
@@ -107,14 +107,14 @@
 
         function filterRepoByName(name) {
             console.log(name);
-            $.ajax('https://api.github.com/search/repositories?q=codegym-vn/' + name)
+            $.ajax('https://api.github.com/search/repositories?q=hcmue/' + name)
                 .done(function (result) {
                     updateRepos(result);
                 });
         }
 
-        function getCodeGymRepos() {
-            $.ajax("https://api.github.com/users/codegym-vn/repos")
+        function getHCMUERepos() {
+            $.ajax("https://api.github.com/users/hcmue/repos")
                 .done(function (result) {
                     showRepoList(result);
                 });
