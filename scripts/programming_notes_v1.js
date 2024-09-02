@@ -7,7 +7,7 @@ function init() {
 
   // Print Footer
   document.getElementById("footer").innerHTML =
-    '<p>Our lessons &nbsp;&nbsp;| &nbsp;&nbsp;<a href="../index.html#lessons">HOME</a></p>';
+    '<p>Our lessons &nbsp;&nbsp;| &nbsp;&nbsp;<a href="../index.html#lessons">HOME</a></p><p style="color:blue"><i>Heavily referenced from Chua Hock Chuan site.</i></p>';
 
   // Generate Table of Content
   if (document.getElementById("toc") != null) {

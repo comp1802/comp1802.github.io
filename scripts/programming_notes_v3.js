@@ -1,11 +1,3 @@
-/*
- * Programming notes JavaScript
- * @version: 3
- * @Created: 4 June 26022
- * @author:  Chua Hock Chuan
- *
- * Revision Notes:
- */
 $(function () {
   /*
    * Load Header onto <div id="header"></div>
@@ -18,7 +10,7 @@ $(function () {
    * Load Footer onto <div id="footer"></div>
    */
   $("#footer").html(
-    '<p>Our lessons &nbsp;&nbsp;|&nbsp;&nbsp; <a href="../index.html#lessons">HOME</a></p>'
+    '<p>Our lessons &nbsp;&nbsp;|&nbsp;&nbsp; <a href="../index.html#lessons">HOME</a></p><p style="color:blue"><i>Heavily referenced from Chua Hock Chuan site.</i></p>'
   );
 
   /*
